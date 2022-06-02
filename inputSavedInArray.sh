@@ -1,4 +1,3 @@
-#! /bin/bash
 echo "Enter names: "
 read -a names     #which means read an array
 echo "Names:" ${names[0]}, ${names[1]}
