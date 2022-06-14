@@ -31,6 +31,7 @@ else
     echo "No its not greater"
 fi 
 # --------------------------------
+# compare numbers etc
 
 newvar=10
 if (($newvar > 9))
@@ -56,4 +57,47 @@ then
     echo "True its not equal"
 else
     echo "It's equal"
+fi
+# --------------------------------
+# compare strings etc
+
+newword=abcd
+if [ $newword == "abcde" ]
+then
+    echo "Yes its matching"
+else
+    echo "No its not matching"
+fi
+
+newword2=shivanand
+if [ $newword2 != "shiva" ]
+then
+    echo "Yes its not matching"
+else
+    echo "No its not matching"
+fi
+
+
+# For integer use (())
+# For String use []
+# Whenever you use like angles or all operatores <,> in string use [[]]
+
+newword3=anm
+if [[ $newword3 < "klm" ]]
+then
+    echo "it is true anm < klm"
+else
+    echo "It false anm < klm"
+fi
+
+# elif
+newword4=you
+if [[ $newword4 < "klm" ]]
+then
+    echo "it is true anm < klm"
+elif [[ $newword4 < "klmn" ]]
+then
+    echo "it is true ofcourse anm < klmn"
+else
+    echo "It false anm < klmn"
 fi
